@@ -1,11 +1,22 @@
 import React from 'react'
+import Bar from './Bar'
 
-const BarArray = () => {
+interface BarArrayProps {
+  nrOfBars?: number;
+};
+
+const BarArray: React.FC<BarArrayProps> = ({ nrOfBars = 20 }) => {
+  const bars = Array.from(
+    { length: nrOfBars }, () => Math.floor(Math.random() * 100) + 1
+  );
+
   return (
-    <div className="h-screen flex items-center justify-center">
-      <div className="py-4">01</div>
-      <div className="py-12">02</div>
-      <div className="py-8">03</div>
+    <div className="h-screen flex justify-center items-start">
+      {
+        bars.map((value) => (
+        <Bar key={value} height={value} value={value} />
+        ))
+      }
     </div>
   )
 }
