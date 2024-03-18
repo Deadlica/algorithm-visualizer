@@ -8,7 +8,7 @@ const Bar = ({ width = 3, height = 10, value = 0 }) => {
   };
 
   return (
-    <div className="bg-sky-400 border border-black text-center pt-3 hover:bg-sky-blue-600" style={barDimensions}>
+    <div className="bg-sky-400 hover:bg-sky-600 border border-black text-center pt-3" style={barDimensions}>
         {value}
     </div>
   )
