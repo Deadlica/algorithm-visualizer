@@ -1,13 +1,12 @@
 import Image from "next/image";
-import Header from "@/components/Header"
-import Container from "@/components/Container"
+import Header from "./components/Header/page";
+import BarArray from "./components/BarArray/page";
 
 export default function Home() {
   return (
     <main>
-      <h1>Abdi was here :-)</h1>
       <Header />
-      <Container />
+      <BarArray />
     </main>
   );
 }
