@@ -14,8 +14,8 @@ export default function Home() {
       <div className="bg-base-300 h-fit flex justify-center items-center rounded-lg z-10">
         <div className="navbar">
           <div className="navbar-start"></div>
-          <div className="navbar-center hidden lg:flex">
-            <ul className="menu menu-horizontal px-1">
+          <div className="navbar-center lg:flex">
+            <ul className="menu lg:flex-row px-1">
               <li>
                 <Link href="/sort" className={`btn btn-outline btn-primary ${styles.menuItem}`}>
                   Sorting
