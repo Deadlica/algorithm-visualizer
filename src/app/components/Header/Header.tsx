@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -50,7 +51,7 @@ const Header = () => {
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">AV</a>
+            <Link href="/" className="btn btn-ghost text-xl">AV</Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">

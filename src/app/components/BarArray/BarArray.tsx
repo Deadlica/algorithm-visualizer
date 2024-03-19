@@ -11,14 +11,14 @@ const BarArray: React.FC<BarArrayProps> = ({ nrOfBars = 20 }) => {
   );
 
   return (
-    <div className="h-screen flex justify-center items-start">
+    <div className="flex justify-center items-start">
       {
         bars.map((value) => (
         <Bar key={value} height={value} value={value} />
         ))
       }
     </div>
-  )
+  );
 }
 
 export default BarArray
