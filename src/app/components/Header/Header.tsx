@@ -1,4 +1,5 @@
 import React from "react";
+import Link from "next/link";
 
 const Header = () => {
   return (
@@ -35,22 +36,14 @@ const Header = () => {
                   <a>Item 1</a>
                 </li>
                 <li>
-                  <a>Parent</a>
-                  <ul className="p-2">
-                    <li>
-                      <a>Submenu 1</a>
-                    </li>
-                    <li>
-                      <a>Submenu 2</a>
-                    </li>
-                  </ul>
+                  <a>Item 2</a>
                 </li>
                 <li>
                   <a>Item 3</a>
                 </li>
               </ul>
             </div>
-            <a className="btn btn-ghost text-xl">AV</a>
+            <Link href="/" className="btn btn-ghost text-xl">AV</Link>
           </div>
           <div className="navbar-center hidden lg:flex">
             <ul className="menu menu-horizontal px-1">
