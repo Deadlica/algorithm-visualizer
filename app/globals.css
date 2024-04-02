@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+    /*background-color: rgb(4 47 46);*/
+    background-color: rgb(2 6 23);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    /*background-color: rgb(4 47 46);*/
+    background-color: rgb(2 6 23);
+    /*opacity: 1;
+    background-image: radial-gradient(#e5e5f7 0.2px, rgb(2 6 23) 0.4px);
+    background-size: 30px 30px;*/
+  }
+}
+body {
+  color: rgb(var(--foreground-rgb));
+    /*background-color: rgb(4 47 46);*/
+    background-color: rgb(2 6 23);
+    /*opacity: 1;
+    background-image: radial-gradient(#e5e5f7 0.2px, rgb(2 6 23) 0.4px);
+    background-size: 30px 30px;*/
+}
